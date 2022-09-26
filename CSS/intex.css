@@ -1,0 +1,1030 @@
+#all {
+    height: 30000px;
+}
+
+#top {
+    height: 80px;
+    background-color: #f27930;
+}
+
+#img1 {
+    width: 1189px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    opacity: .3;
+}
+
+#navigate {
+    height: 31px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+
+#nav {
+    width: 1190px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 31px;
+}
+
+#nav a,
+#navL {
+    font-size: 12px;
+    color: #999;
+    /* display: block; */
+}
+
+.red,
+#navR a.red {
+    color: #f00;
+}
+
+/* 设置超链接移入的效果 */
+#nav a:hover,
+#navL:hover,
+#navitems span:hover {
+    color: #f00;
+}
+
+/* 设置间隔条样式 */
+#nav .line {
+    color: #ccc;
+    margin: 0px 12px;
+}
+
+#navR,
+#nav li {
+    float: right;
+}
+
+#navL {
+    float: left;
+    padding: 0 8px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    position: relative;
+    z-index: 9999;
+}
+
+/* 你好请登录的间隔 */
+#nihao {
+    padding-right: 12px;
+}
+
+#navR i {
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.location {
+    position: relative;
+}
+
+.location .city-list {
+    display: none;
+    width: 280px;
+    height: 436px;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    /* 设置绝对定位，使其不占据页面的位置 */
+    position: absolute;
+    top: 31px;
+    z-index: 999;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2)
+}
+
+/* 当鼠标移入到location时，让city-list显示 */
+.location:hover .city-list {
+    display: block;
+}
+
+/* 设置城市的移入效果 */
+.location:hover #navL {
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+.city-list a {
+    display: block;
+    /* color: #999; */
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    /* font-size: 14px; */
+    margin-top: 10px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+/*表格样式*/
+table {
+    width: 280px;
+    height: 220px;
+    text-align: center;
+}
+
+/*单元格样式*/
+/* td {
+    width: 50px;
+    height: 30px;
+}  */
+
+/*悬浮时改变样式*/
+td:hover a {
+    background-color: #f4f4f4;
+    color: red;
+}
+
+/*默认地址样式*/
+.city-list #ad {
+    background-color: red;
+    color: white;
+}
+
+/*默认地址的悬浮样式*/
+.city-list #ad:hover {
+    color: white;
+    background-color: red;
+}
+
+.app {
+    position: relative;
+}
+
+.app .qrcode {
+    /* 隐藏起来 */
+    display: none;
+    /* 开启绝对定位 脱离文档流 不占据位置 */
+    position: absolute;
+    left: -140px;
+    width: 200px;
+    height: 0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    /* 默认继承了topbar的行高  所以要重新设置  */
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* 设置过渡效果 */
+    transition: height 0.3s;
+    z-index: 999;
+}
+
+.app::after {
+    display: none;
+    content: "";
+    width: 0px;
+    height: 0px;
+    /*  开启绝对定位 * */
+    position: absolute;
+    border: 7px solid transparent;
+    border-bottom-color: #fff;
+    left: 0px;
+    right: 0px;
+    bottom: -7px;
+    margin: auto;
+}
+
+#up {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-color: #bfa;
+    right: 150px;
+}
+
+.word {
+    width: 120px;
+    position: absolute;
+    /* background-color: black; */
+    margin-left: 80px;
+}
+
+.word span {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.span1 {
+    color: rgb(102, 102, 151);
+}
+
+.span2 {
+    color: red;
+}
+
+.span3 #ad {
+    font-size: 15px;
+    color: rgb(187, 211, 77);
+}
+
+/* 鼠标移入时 显示下拉二维码 */
+.app:hover .qrcode,
+.app:hover::after {
+    display: block;
+    height: 200px;
+}
+
+/* 头部样式开始 */
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#cen {
+    width: 1190px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    width: 190px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: -60px;
+    background: url("img/05京东log.png") no-repeat;
+}
+
+.search-log {
+    display: none;
+    float: left;
+    width: 125px;
+    height: 40px;
+    background: url("img/05京东log.png") no-repeat;
+    background-position: 0 -120px;
+
+}
+
+.search {
+    float: left;
+}
+
+.form {
+    position: relative;
+    width: 548px;
+    height: 34px;
+    border: 1px solid #e2231a;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+.hot-word {
+    float: left;
+    width: 425px;
+    height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.form>button {
+    position: absolute;
+    right: 0;
+    width: 57px;
+    height: 32px;
+    /* line-height: 32px; */
+    background-color: #e1251b;
+    cursor: pointer;
+    border: 0;
+    /* padding-top: 5px; */
+}
+
+.form>button:hover {
+    background-color: #c81623;
+}
+
+.list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 36px;
+    width: 488px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 999;
+}
+
+.list>p {
+    text-align: left;
+    line-height: 25px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.list>p:hover {
+    background-color: #ddd;
+}
+
+#navitems {
+    position: absolute;
+    width: 790px;
+    height: 40px;
+    line-height: 40px;
+    left: 200px;
+    bottom: 0;
+}
+
+#navitems span {
+    margin: 0 8px;
+}
+
+/* 右侧图 */
+#treasure {
+    float: right;
+    width: 190px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+#J_promo_lk {
+    display: block;
+    width: 190px;
+    height: 120px;
+    background-image: url(../img/右侧图.png);
+}
+
+/* 吸顶的样式 */
+.header-fix {
+    z-index: 999;
+    position: fixed;
+    top: -52px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #f10214;
+    background-color: #fff;
+    animation: searchTop .5s ease-in-out;
+}
+
+@keyframes searchTop {
+    0% {
+        top: -52px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+/* 头部样式结束 */
+
+/* 9-22 */
+/* banner样式开始 */
+.banner {
+    width: 100%;
+    height: 470px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.banner-box {
+    width: 790px;
+    height: 470px;
+    float: left;
+    margin: 0 10px;
+}
+
+.slide-banner {
+    position: relative;
+    float: left;
+    width: 590px;
+    height: 470px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 18px 18px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 18px 0 0 18px;
+}
+
+.banner-btn {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+
+.banner-btn>li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.banner-btn>.btn-active {
+    width: 9px;
+    height: 9px;
+    border: 3px solid rgba(0, 0, 0, .1);
+    background-color: #fff;
+    margin-top: -2px;
+}
+
+.banner-aside {
+    width: 190px;
+    height: 470px;
+    float: right;
+}
+
+.banner-aside li {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.banner-aside img {
+    width: 100%;
+}
+
+.banner-left,
+.banner-right {
+    width: 190px;
+    height: 470px;
+    background-color: #fff;
+    float: left;
+}
+
+/* 左侧图 */
+#J_fs_act_lk {
+    width: 450px;
+    height: 470px;
+    position: absolute;
+    left: -450px;
+    cursor: pointer;
+}
+
+#J_fs_act_lk img {
+    float: right;
+}
+
+#J_fs_act_lk a img {
+    /* overflow: hidden; */
+    content: "";
+    width: 0px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    transition: width 0.3s;
+}
+
+#J_fs_act_lk:hover a img {
+    width: 790px;
+}
+
+/* 左侧导航栏 */
+/* 设置菜单外部容器 */
+.banner-left {
+    /* 设置宽度 */
+    width: 190px;
+    /* 设置高度 */
+    height: 450px;
+    /* 设置padding */
+    padding: 10px 0;
+    /* 设置一个背景颜色 */
+    background-color: #fff;
+
+    margin: 0px auto;
+}
+
+/* 设置菜单内部的item */
+.banner-left .item {
+    height: 25px;
+    /* 要让一个文字在父元素中垂直居中，只需将父元素的line-height设置为一个和父元素height一样的值 */
+    line-height: 25px;
+    /* 设置item的右内边距，将文字向内移动  */
+    padding-left: 18px;
+    /* 设置字体大小 */
+    font-size: 14px;
+}
+
+/* 设置/的距离 */
+.item .line {
+    padding: 0 2px;
+}
+
+/* 为item设置一个鼠标移入的状态 */
+.item:hover {
+    background-color: #d9d9d9;
+}
+
+/* 设置超链接的样式 */
+.item a {
+    /* 设置字体大小 */
+    font-size: 14px;
+    /* 设置字体的颜色 */
+    color: #333;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+
+/* 设置超链接的hover的样式 */
+.item a:hover {
+    color: #c81623;
+}
+
+/* 右侧栏 */
+#J_user {
+    height: 102px;
+    /* background: #bfa; */
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.user_inner {
+    position: relative;
+    padding-top: 67px;
+    height: 35px;
+}
+
+.J_user_avatar {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    width: 44px;
+    height: 44px;
+}
+
+.user_avatar_lk,
+.user_avatar_lk img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.user_avatar_lk {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 5%);
+}
+
+.user_show {
+    position: absolute;
+    top: 16px;
+    left: 74px;
+    right: 10px;
+}
+
+.user_show a {
+    font-size: 12px;
+}
+
+.user_tip {
+    color: #666;
+}
+
+.user_login {
+    color: #333;
+}
+
+.user_profit {
+    height: 25px;
+    font-size: 0;
+    text-align: center;
+}
+
+.user_profit_lk {
+    display: inline-block;
+    margin: 0 5px;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 13px;
+    background: #e1251b;
+    transition: .3s ease, color .3s ease;
+}
+
+.user_profit_lk_plus {
+    background: #363634;
+    color: #e5d790;
+}
+
+.user_tip:hover,
+.user_login:hover {
+    color: #e1251b;
+}
+
+.user_profit_lk_plus:hover {
+    background: #e1251b;
+    color: #fff;
+}
+
+.user_profit::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 44px;
+    width: 100px;
+    height: 1px;
+    background: #eee;
+
+}
+
+/* 右中京东快报 */
+a {
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+}
+
+#J_news,
+.news2 {
+    overflow: hidden;
+    width: 190px;
+    height: 130px;
+}
+
+#J_news .news_hd {
+    height: 20px;
+    padding: 10px 0 0;
+    position: relative;
+    line-height: 20px;
+    font-size: 0;
+    margin-bottom: 8px;
+}
+
+#J_news .news_tit {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: #333;
+}
+
+#J_news .news_more {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+#J_news .news_list {
+    position: relative;
+    margin: 0 15px;
+    height: 88px;
+}
+
+#J_news .news_item {
+    max-width: 166px;
+    width: 166px;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    margin-bottom: 6px;
+}
+
+.news_tag {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    height: 16px;
+    width: 35px;
+    line-height: 16px;
+    text-align: center;
+    color: #e1251b;
+    background-color: rgba(225, 37, 27, .08);
+    margin-right: 6px;
+}
+
+#J_news .news_more:hover,
+.news_link:hover {
+    color: #e1251b;
+}
+
+/* 右下图标 */
+.service_entry {
+    overflow: hidden;
+    padding: 5px .5px;
+}
+
+.service_list {
+    padding-top: 5px;
+    width: 190px;
+    height: 225px;
+}
+
+.service_item {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.service_ico,
+.service_ico_img {
+    display: block;
+}
+
+.service_ico {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.service_ico_img,
+.service_ico_img_hover {
+    width: 28px;
+    height: 28px;
+}
+
+.service_ico,
+.service_ico_img {
+    display: block;
+}
+
+.service_ico_img_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.service_txt {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.service_item:hover .service_ico_img_hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.service_item:hover .service_txt {
+    color: #e1251b;
+}
+
+/* banner样式结束 */
+
+
+
+/* 主体样式开始 */
+.zHome {
+    position: relative;
+    height: 4000px;
+}
+
+.items {
+    text-align: center;
+}
+
+
+/* 京东秒杀 */
+.miaosha {
+    height: 260px;
+    background-color: pink;
+}
+
+#count {
+    float: left;
+    width: 190px;
+    height: 260px;
+    text-align: center;
+    background-image: url(../img/京东秒杀.png);
+    font-size: 14px;
+    color: #fff;
+    /* margin: 100px auto; */
+}
+
+#countdown-title {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+#countEnd {
+    width: 190px;
+    height: 26px;
+    padding-top: 90px;
+}
+
+#clock,
+#clockM {
+    font-size: 20px;
+}
+
+#countTime {
+    width: 190px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.hour,
+.min,
+.sec {
+    width: 30px;
+    height: 30px;
+    background-color: #2f3430;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* 秒杀中部假图 */
+#jiatu {
+    float: left;
+    width: 800px;
+    height: 260px;
+}
+
+/* 秒杀右侧栏 */
+.seckill-brand {
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 260px;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.item-info {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    background: linear-gradient(white, #eef0f6);
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.item-info-title {
+    color: #666;
+}
+
+.item-info-promo {
+    color: #333;
+    font-weight: 700;
+}
+
+.item-info-action {
+    color: #e1251b;
+    width: 82px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid #e1251b;
+    border-radius: 14px;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.item-info-action:hover {
+    color: white;
+    background-color: #e1251b;
+}
+
+.item-image:hover {
+    opacity: 0.8;
+}
+
+.tese {
+    height: 980px;
+    background-color: palegreen;
+    margin-top: 10px;
+}
+
+.tese img {
+    display: block;
+}
+
+.guangchang {
+    height: 1005px;
+    background-color: palevioletred;
+}
+
+.forU {
+    height: 666px;
+    background-color: paleturquoise;
+}
+
+/* 电梯样式 */
+.elevator {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 615px;
+    transition: all .5s;
+}
+
+.elevator>a {
+    display: block;
+    width: 58px;
+    height: 38px;
+    color: #333;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 11px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.elevator-fix {
+    position: fixed;
+    top: 75px;
+}
+
+.elevator>.active {
+    color: #e1251b;
+}
+
+.elevator a:hover {
+    background: #e1251b;
+    color: white;
+}
+
+#scrollTopBack {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.wrap #scrollTopBack.activeBack {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 主体样式结束 */

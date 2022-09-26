@@ -1,0 +1,17 @@
+.cleafix::before,
+.cleafix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.qr{
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(204, 204, 204);
+    float: left;
+}
